@@ -1,0 +1,11 @@
+node_modules
+dist
+target
+*.jar
+*.war
+*.class
+.idea
+*.iml
+.DS_Store
+*.log
+application-local.yml
