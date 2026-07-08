@@ -15,11 +15,11 @@ request.interceptors.request.use((config) => {
 
 request.interceptors.response.use(
   (response) => {
-    const { code, message, data } = response.data
+    const { code, data } = response.data
     if (code === 200) {
       return data
     }
-    throw new Error(message || '请求失败')
+    throw new Error('Request failed')
   },
   (error) => {
     if (error.response?.status === 401) {
